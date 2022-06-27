@@ -25,6 +25,9 @@ jobs:
       - name: Unit Test
         run: coverage run -m unittest -v test
 
+      - name: Test Coverage
+        run: coverage report
+
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
